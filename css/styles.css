@@ -549,11 +549,15 @@ img {
   z-index: 999;
 }
 
+.is-open {
+  opacity: 0;
+}
+
 .modal {
   position: relative;
   width: 408px;
   height: 80%;
-  min-height: 584px;
+  min-height: 610px;
   background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -607,8 +611,6 @@ img {
   margin-bottom: 4px;
 }
 
-
-
 .terms-field {
   font-weight: 400;
   font-size: 12px;
@@ -619,9 +621,6 @@ img {
   display: block;
   display: flex;
   align-items: baseline;
- 
-  
-
 }
 
 .input-wrapper {
@@ -639,10 +638,9 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
-  
 }
 
-.form-icon{
+.form-icon {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -674,7 +672,6 @@ img {
 
 .text-field:focus + .form-icon {
   fill: #4d5ae5;
-
 }
 
 .comment-field::placeholder {
@@ -694,8 +691,8 @@ img {
 }
 
 .input-checkbox:checked + .terms-field .custom-checkbox {
-  background-color:#404bbf;
-  fill:#fff; 
+  background-color: #404bbf;
+  fill: #fff;
 }
 
 .input-checkbox {
@@ -703,7 +700,7 @@ img {
 }
 
 .input-checkbox:focus + .terms-field .custom-checkbox {
-  border-color:#404bbf;
+  border-color: #404bbf;
 }
 
 .custom-checkbox {
@@ -712,17 +709,12 @@ img {
   width: 16px;
   height: 16px;
   display: block;
-  transition: background-color 250ms ease-in-out, 
-  border-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
   fill: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 8px;
-  
-  
-
-
 }
 
 /* .icon-vector {
@@ -743,8 +735,8 @@ a.privacy-link {
 
 .button-send {
   border-radius: 4px;
-  
-  border:none;
+
+  border: none;
   width: 169px;
   height: 56px;
 
@@ -759,9 +751,12 @@ a.privacy-link {
   color: #fff;
   margin: 0 auto;
   display: block;
-  
+  transition: background-color 250ms ease-in-out;
 }
-
-
+.button-send:hover,
+.button-send:focus,
+.button-send:active {
+  background-color: #404bbf;
+}
 
 /* #endregion modal */
