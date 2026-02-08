@@ -553,7 +553,7 @@ img {
   position: relative;
   width: 408px;
   height: 80%;
-  max-height: 584px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -616,6 +616,9 @@ img {
   display: block;
 }
 
+.input-wrapper {
+  position: relative;
+}
 .text-field {
   width: 100%;
   height: 40px;
@@ -628,6 +631,14 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
+  
+}
+
+.form-icon{
+  position: absolute;
+  top:0;
+  left: 0;
+  fill: #2e2f42;
 }
 
 .comment-field {
@@ -682,11 +693,10 @@ a.privacy-link {
 
 .button-send {
   border-radius: 4px;
-  border-color: #4d5ae5;
-
+  
+  border:none;
   width: 169px;
   height: 56px;
-  outline: none;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -697,6 +707,11 @@ a.privacy-link {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  margin: 0 auto;
+  display: block;
+  
 }
+
+
 
 /* #endregion modal */
