@@ -589,6 +589,7 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-top: 48px;
+  margin-bottom: 16px;
 }
 
 .field-wrapper {
@@ -605,6 +606,8 @@ img {
   color: #8e8f99;
   margin-bottom: 4px;
 }
+
+
 
 .terms-field {
   font-weight: 400;
@@ -636,9 +639,11 @@ img {
 
 .form-icon{
   position: absolute;
-  top:0;
-  left: 0;
+  top: 50%;
+  left: 16px;
   fill: #2e2f42;
+  transform: translateY(-50%);
+  transition: fill 250ms ease-in-out;
 }
 
 .comment-field {
@@ -662,6 +667,11 @@ img {
   outline: none;
 }
 
+.text-field:focus + .form-icon {
+  fill: #4d5ae5;
+
+}
+
 .comment-field::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -678,6 +688,30 @@ img {
   color: #8e8f99;
 }
 
+.input-checkbox:checked + .terms-field .custom-checkbox {
+  background-color:#404bbf;
+  
+   
+}
+
+.custom-checkbox {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  display: block;
+  transition: background-color 250ms ease-in-out;
+  fill: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+/* .icon-vector {
+  fill: #2e2f42;
+} */
 a.privacy-link {
   line-height: 1.33;
   text-decoration: underline;
