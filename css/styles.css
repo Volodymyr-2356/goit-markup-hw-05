@@ -690,6 +690,8 @@ img {
 
 .input-checkbox:checked + .terms-field .custom-checkbox {
   background-color:#404bbf;
+  fill:#fff;
+
   
    
 }
@@ -701,7 +703,7 @@ img {
   height: 16px;
   display: block;
   transition: background-color 250ms ease-in-out;
-  fill: red;
+  fill: none;
   display: flex;
   justify-content: center;
   align-items: center;
