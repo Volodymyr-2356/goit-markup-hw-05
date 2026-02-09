@@ -424,12 +424,12 @@ img {
   display: flex;
   /* column-gap: 120px; */
   align-items: baseline;
-  justify-content: space-between;
 }
 .footer-text-box {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  margin-right: 120px;
 }
 
 .footer-description {
@@ -478,6 +478,7 @@ img {
 }
 
 .subscribe {
+  margin-left: auto;
 }
 
 .sub-title {
